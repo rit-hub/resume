@@ -458,3 +458,6 @@ img{
 .about-section .about-info span{
 	font-weight: 600;
 }
+.about-section .about-info .btn-1{
+	margin:30px 20px 0 0;
+}
