@@ -27,24 +27,27 @@
 	
 </header>
 <!-- header end -->
+
 <!-- navigation menu start -->
 <nav class="nav-menu">
 	<div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
 	<div class="nav-menu-inner">
 		<ul>
-			<li><a href="#" class="inner-shadow active">Home</a></li>
-			<li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
-			<li><a href="#" class="outer-shadow hover-in-shadow">Services</a></li>
-			<li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
-			<li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+			<li><a href="#home" class="inner-shadow active link-item">Home</a></li>
+			<li><a href="#about" class="outer-shadow hover-in-shadow link-item">About</a></li>
+			<li><a href="#services" class="outer-shadow hover-in-shadow link-item">Services</a></li>
+			<li><a href="#portfolio" class="outer-shadow hover-in-shadow link-item">Portfolio</a></li>
+			<li><a href="#contact" class="outer-shadow hover-in-shadow link-item">Contact</a></li>
 		</ul>
 	</div>
 	<!-- copyright---->
 	<p class="copyright-text">&copy; 2021 Ritam Charan</p>
 </nav>
+<div class="fade-out-effect">
+</div>
 <!-- navigation menu end -->
 <!-- home section start -->
-<section class="home-section section">
+<section class="home-section section active" id="home">
 	<!----- effect wrap start ------>
 	<div class="effect-wrap">
 		<div class="effect effect-1">
@@ -70,8 +73,8 @@
 			<div class="home-text">
 				<p>Hello,</p>
 				<h2>I'm Ritam...</h2>
-				<h1>Developer & Software Engineer</h1>
-				<a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+				<h1>Develop er & Software Engineer</h1>
+				<a href="#about" class="btn-1 outer-shadow hover-in-shadow link-item">More About Me</a>
 			</div>
 			<div class="home-img">
 				<div class="img-box inner-shadow">
@@ -83,7 +86,7 @@
 </section>
 <!-- home section end -->
 <!-- about section start -->
-<section class="about-section section">
+<section class="about-section section" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="section-title">
@@ -109,8 +112,8 @@
 					 My secondary skills include good technical knowledge, analytical skills, and problem-solving skill. And my major interest in learning new technologies. 
 					<p>Currently looking for a challenging position with an organization that will make the best use of my existing skills & experiences to add value to that Organisation's Growth.</p>
 				</p>
-				<a href="#" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-				<a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+				<a href="project-content/cv2.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+				<a href="#contact" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
 			</div>
 		</div>
 		<!-- about tabs start -->
@@ -360,7 +363,7 @@
 </secton>
 <!-- about section end -->
 <!-- service section start -->
-<section class="service-section section">
+<section class="service-section section" id="services">
 	<div class="container">
 		<div class="row">
 			<div class="section-title">
@@ -439,7 +442,7 @@
 </section>
 <!-- service section end -->
 <!-- portfolio section start -->
-<section class="portfolio-section section">
+<section class="portfolio-section section" id="portfolio">
 	<div class="container">
 		<div class="row">
 			<div class="section-title">
@@ -452,24 +455,117 @@
 				<span class="filter-item outer-shadow active" data-target="all">all</span>
 				<span class="filter-item" data-target="web-appplication">web-appplication</span>
 				<span class="filter-item" data-target="machine-learning">machine-learning</span>
-				<span class="filter-item" data-target="flutter">flutter</span>
-				<span class="filter-item" data-target="aws">aws</span>
+				<span class="filter-item" data-target="mobile-application">Mobile Application</span>
+				<span class="filter-item" data-target="cloud-projects">Cloud Projects</span>
 			</div>
 		</div>
 		<!-- portfolio filter end -->
 		<!-- portfolio items start -->
 		<div class="row portfolio-items">
 			<!-- portfolio item start -->
-			<div class="portfolio-item">
+			<div class="portfolio-item" data-category="web-appplication">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png">
+						<img src="img/portfolio/thumb/Covid-19.png" alt="pic"
+						data-screenshots="img/portfolio/large/DUMMY.png">
+						<!-- view project button -->
+						<span class="view-project">View Project</span>
+					</div>
+					<p class="portfolio-item-title">Covid-19 Tracker</p>
+					<!--portfolio item details start-->
+					<div class="portfolio-item-details">
+						<div class="row">
+							<div class="description">
+								<h3>Project Brief:</h3>
+								<p>This a web application based  tracker which provides the number of confirmed cases and deaths from novel Corona virus by country. The data are drawn from the COVID-19 data API by Sourceres on rapidapi.com.</p>
+							</div>
+							<div class="info">
+								<h3>Project Info</h3>
+								<ul>
+									<li>Date - <span>2020</span></li>
+									<li>Client - <span>xyz</span></li>
+									<li>Tools - <span>HTML, CSS, JS</span></li>
+									<li>Web - <span><a href="#">www.domain.com</a></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--portfolio item details end-->
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item start -->
+			<div class="portfolio-item" data-category="web-appplication">
+				<div class="portfolio-item-inner outer-shadow">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio/thumb/Whatsapp-Web.png" alt="pic"
+						data-screenshots="img/portfolio/large/DUMMY.png">
+						<!-- view project button -->
+						<span class="view-project">View Project</span>
+					</div>
+					<p class="portfolio-item-title">Whatsapp Web clone</p>
+					<!--portfolio item details start-->
+					<div class="portfolio-item-details">
+						<div class="row">
+							<div class="description">
+								<h3>Project Brief:</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+							</div>
+							<div class="info">
+								<h3>Project Info</h3>
+								<ul>
+									<li>Date - <span>2020</span></li>
+									<li>Client - <span>xyz</span></li>
+									<li>Tools - <span>HTML, CSS, JS</span></li>
+									<li>Web - <span><a href="#">www.domain.com</a></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--portfolio item details end-->
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item start -->
+			<div class="portfolio-item" data-category="mobile-application">
+				<div class="portfolio-item-inner outer-shadow">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio/thumb/bmi.png" alt="pic"
+						data-screenshots="img/portfolio/large/bmi-large.png">
+						<!-- view project button -->
+						<span class="view-project">View Project</span>
+					</div>
+					<p class="portfolio-item-title">BMI Calculator</p>
+					<!--portfolio item details start-->
+					<div class="portfolio-item-details">
+						<div class="row">
+							<div class="description">
+								<h3>Project Brief:</h3>
+								<p>Calculate your body mass index.
+									Know what your physical condition is or if you have to
+									 improve it in order to have a good health</p>
+							</div>
+							<div class="info">
+								<h3>Project Info</h3>
+								<ul>
+									<li>Date - <span>2020</span></li>
+									<li>Client - <span>xyz</span></li>
+									<li>Tools - <span>HTML, CSS, JS</span></li>
+									<li>Web - <span><a href="#">www.domain.com</a></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--portfolio item details end-->
+				</div>
+			</div>
+			<!-- portfolio item end -->
+			<!-- portfolio item start -->
+			<div class="portfolio-item" data-category="web-appplication">
+				<div class="portfolio-item-inner outer-shadow">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio/thumb/PORTFOLIO.png" alt="pic"
+						data-screenshots="img/portfolio/large/DUMMY.png">
 						<!-- view project button -->
 						<span class="view-project">View Project</span>
 					</div>
@@ -497,20 +593,15 @@
 			</div>
 			<!-- portfolio item end -->
 			<!-- portfolio item start -->
-			<div class="portfolio-item">
+			<div class="portfolio-item" data-category="mobile-application">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png">
+						<img src="img/portfolio/thumb/Xylophone.png" alt="pic"
+						data-screenshots="img/portfolio/large/xylophone-large.png">
 						<!-- view project button -->
 						<span class="view-project">View Project</span>
 					</div>
-					<p class="portfolio-item-title">Personal Portfolio</p>
+					<p class="portfolio-item-title">Xylophone App</p>
 					<!--portfolio item details start-->
 					<div class="portfolio-item-details">
 						<div class="row">
@@ -532,132 +623,9 @@
 					<!--portfolio item details end-->
 				</div>
 			</div>
-			<!-- portfolio item end -->
+			<!-- portfolio item end --> 
 			<!-- portfolio item start -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-inner outer-shadow">
-					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png">
-						<!-- view project button -->
-						<span class="view-project">View Project</span>
-					</div>
-					<p class="portfolio-item-title">Personal Portfolio</p>
-					<!--portfolio item details start-->
-					<div class="portfolio-item-details">
-						<div class="row">
-							<div class="description">
-								<h3>Project Brief:</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-							</div>
-							<div class="info">
-								<h3>Project Info</h3>
-								<ul>
-									<li>Date - <span>2020</span></li>
-									<li>Client - <span>xyz</span></li>
-									<li>Tools - <span>HTML, CSS, JS</span></li>
-									<li>Web - <span><a href="#">www.domain.com</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--portfolio item details end-->
-				</div>
-			</div>
-			<!-- portfolio item end -->
-			<!-- portfolio item start -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-inner outer-shadow">
-					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png">
-						<!-- view project button -->
-						<span class="view-project">View Project</span>
-					</div>
-					<p class="portfolio-item-title">Personal Portfolio</p>
-					<!--portfolio item details start-->
-					<div class="portfolio-item-details">
-						<div class="row">
-							<div class="description">
-								<h3>Project Brief:</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-							</div>
-							<div class="info">
-								<h3>Project Info</h3>
-								<ul>
-									<li>Date - <span>2020</span></li>
-									<li>Client - <span>xyz</span></li>
-									<li>Tools - <span>HTML, CSS, JS</span></li>
-									<li>Web - <span><a href="#">www.domain.com</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--portfolio item details end-->
-				</div>
-			</div>
-			<!-- portfolio item end -->
-			<!-- portfolio item start -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-inner outer-shadow">
-					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png,
-						img/portfolio/large/project-1/DUMMY.png">
-						<!-- view project button -->
-						<span class="view-project">View Project</span>
-					</div>
-					<p class="portfolio-item-title">Personal Portfolio</p>
-					<!--portfolio item details start-->
-					<div class="portfolio-item-details">
-						<div class="row">
-							<div class="description">
-								<h3>Project Brief:</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-							</div>
-							<div class="info">
-								<h3>Project Info</h3>
-								<ul>
-									<li>Date - <span>2020</span></li>
-									<li>Client - <span>xyz</span></li>
-									<li>Tools - <span>HTML, CSS, JS</span></li>
-									<li>Web - <span><a href="#">www.domain.com</a></span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--portfolio item details end-->
-				</div>
-			</div>
-			<!-- portfolio item end -->
-			<!-- portfolio item start -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-inner outer-shadow">
-					<div class="portfolio-item-img">
-						<img src="img/portfolio/thumb/Dummy projects.png" alt="pic"
-						data-screenshots="img/portfolio/large/project-1/DUMMY.png">
-						<!-- view project button -->
-						<span class="view-project">View Project</span>
-					</div>
-					<p class="portfolio-item-title">Personal Portfolio</p>
-					<!--portfolio item details start-->
-					<!--portfolio item has no details-->
-					<!--portfolio item details end-->
-				</div>
-			</div>
+
 			<!-- portfolio item end -->
 		</div>
 		<!-- portfolio items end -->
@@ -666,7 +634,7 @@
 <!-- portfolio section end -->
 
 <!-- contact section start -->
-<section class="contact-section section">
+<section class="contact-section section" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="section-title">
@@ -742,7 +710,7 @@
 		<div class="pp-main-inner">
 			<div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details <i class="fas fa-plus"></i></div>
 			<div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-			<img src="img/portfolio/large/project-2/DUMMY.png" alt="img" class="pp-img outer-shadow">
+			<img src="img/portfolio/large/DUMMY.png" alt="img" class="pp-img outer-shadow">
 			<div class="pp-counter">1 of 6</div>
 		</div>
 		<div class="pp-loader">

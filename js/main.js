@@ -1,3 +1,54 @@
+/*-----------nav menu ------------------*/
+(()=>{
+	const hamburgerBtn = document.querySelector(".hamburger-btn"),
+	navMenu = document.querySelector(".nav-menu"),
+	closeNavBtn = navMenu.querySelector(".close-nav-menu");
+	hamburgerBtn.addEventListener("click", showNavMenu);
+	closeNavBtn.addEventListener("click", hideNavMenu);
+
+	function showNavMenu(){
+		navMenu.classList.add("open");
+		bodyScrollingToggle();
+	}
+	function hideNavMenu(){
+		navMenu.classList.remove("open");
+		fadeOutEffect();
+		bodyScrollingToggle();
+	}
+	function fadeOutEffect(){
+		document.querySelector(".fade-out-effect").classList.add("active");
+		setTimeout(()=>{
+			document.querySelector(".fade-out-effect").classList.remove("active");
+		},300)
+	}
+	// // attach an event handeler to document
+	// document.addEventListener("click", (event)=>{
+	// 	if (event.target.classList.contains('link-item')) {
+	// 		// make sure event.target.hash has a value before overriding default behavior
+	// 		if (event.target.hash !=="") {
+	// 			// prevent default anchor click behavior
+	// 			event.preventDefault();
+	// 			const hash = event.target.hash;
+	// 			console.log(hash);
+	// 			// deactive existing active section
+	// 			document.querySelector(".section.active").classList.add("hide");
+	// 			document.querySelector(".section.active").classList.remove("active");
+	// 			// active new section
+	// 			document.querySelector(".section.active").classList.add("active");
+	// 			document.querySelector(".section.active").classList.remove("hide");
+	// 	// 		// deactive existing active navigation menu 'link-item'
+	// 	// 		navMenu.querySelector(".active").classList.add("outer-shadow","hover-in-shadow");
+	// 	// 		navMenu.querySelector(".active").classList.remove("active","inner-shadow");
+	// 	// 		// activating new navigation menu link-item
+	// 	// 		event.target.classList.add("active","inner-shadow");
+	// 	// 		event.target.classList.remove("outer-shadow","hover-in-shadow");
+	// 	// 		// hide navigation menu
+	// 	// 		hideNavMenu();
+	// 		}	
+	// 	} 
+	// })
+})();
+/*-------------- about section ------------*/
 (()=>{
 	const aboutSection = document.querySelector(".about-section"),
 	tabsContainer = document.querySelector(".about-tabs");
@@ -135,12 +186,15 @@ function bodyScrollingToggle() {
 		const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
 		popup.querySelector(".pp-title h2").innerHTML = title;
 		const category = portfolioItems[itemIndex].getAttribute("data-category").innerHTML;
-		popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
+		// popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
+		console.log(category);
+		popup.querySelector(".pp-project-category").innerHTML = category;
 
 	}
 
 	projectDetailsBtn.addEventListener("click",()=>{
 		popupDetailsToggle();
+		popupDetails();
 	})
 
 	function popupDetailsToggle(){
@@ -159,13 +213,16 @@ function bodyScrollingToggle() {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
 })();
+
+/*--------------- hide all section except active one -------------------*/
+// (()=>{
+
+// 	const sections = document.querySelectorAll(".section");
+// 	sections.forEach((section)=>{
+// 		if (!section.classList.contains("active")) {
+// 			section.classList.add("hide");
+// 		}
+// 	})
+
+// })();
