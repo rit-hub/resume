@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ritam.xyz
+Token: c6500ee483c69cba8bea80d60cdb86110ce4e4007661c73c5839df0aed6d1d85
